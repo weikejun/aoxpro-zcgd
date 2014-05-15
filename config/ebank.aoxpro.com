@@ -1,8 +1,7 @@
 <VirtualHost *:80>
-	ServerName hbr2013.cebnet.com.cn
-	ServerAlias ebank.aoxpro.com
+	ServerName zcgd2014.aoxpro.com 
 	ServerAdmin jim.dev@qq.com
-	DocumentRoot /usr/local/apps/aoxpro_ebank/htdocs
+	DocumentRoot /usr/local/apps/aoxpro_zcgd/htdocs
 	DirectoryIndex index.html index.php
 
 	<Directory />
@@ -10,7 +9,7 @@
 		AllowOverride None
 	</Directory>
 
-	<Directory /usr/local/apps/aoxpro_ebank/htdocs>
+	<Directory /usr/local/apps/aoxpro_zcgd/htdocs>
 		Options Includes Indexes FollowSymLinks
 		AllowOverride None
 		Order allow,deny
