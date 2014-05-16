@@ -141,7 +141,7 @@ class My_Action_Game extends My_Action_Abstract {
 		$session = $this->getSession();
 		$content = urldecode($this->getRequest('content'));
 		if (empty($content)) {
-			$content = ConfigLoader::getInstance()->get('share', 'content') . ' http://' . $this->getServer('HTTP_HOST');
+			$content = ConfigLoader::getInstance()->get('share', 'content_error') . ' http://' . $this->getServer('HTTP_HOST');
 		}
 		$picUrl = urldecode($this->getRequest('pic_url'));
 		if (empty($picUrl)) {
@@ -214,7 +214,12 @@ class My_Action_Game extends My_Action_Abstract {
 	}
 
 	public function getShareAction() {
-		$content = ConfigLoader::getInstance()->get('share', 'content') . ' http://' . $this->getServer('HTTP_HOST');
+		$contentId = $this->getRequest('contentId');
+		$contents = ConfigLoader::getInstance()->get('share', 'content');
+		$content = ConfigLoader::getInstance()->get('share', 'content_error');
+		if (isset($contents[$contentId])) {
+			$content = $contents[$contentId] . ' http://' . $this->getServer('HTTP_HOST');
+		}
 		$this->setViewParams('data', 
 				array(
 					'success' => 1,

@@ -14,7 +14,10 @@ $gConfig['game'] = array(
 
 $gConfig['share'] = array(
 		'pic_url' => 'http://zcgd2014.aoxpro.com/img/share_game.jpg',
-		'content' => '我参加了#e滴水v环保#活动，成功通过了"环保卫士大作战"游戏，大奖可是iphone5S呦，还有三星GALAXY Tab3，充值卡天天拿。使用一次电子银行交易将节省约2克纸张，意味着保护了10滴天然水免受污染，我是环保卫士我为环保做贡献！@中国电子银行网',
-		'content_error' => '我参加了#e滴水v环保#活动，成功通过了"环保卫士大作战"游戏，大奖可是iphone5S呦，还有三星GALAXY Tab3，充值卡天天拿。使用一次电子银行交易将节省约2克纸张，意味着保护了10滴天然水免受污染，我是环保卫士我为环保做贡献！@中国电子银行网',
+		'content' => array(
+			1 =>'分享文案1',
+			2 => '分享文案2'
+			),
+		'content_error' => '分享出错文案',
 		'join_tips' => ''
 		);
