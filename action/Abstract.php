@@ -39,7 +39,7 @@ abstract class My_Action_Abstract {
 
 	public function getServer($key = null) {
 		if($key=='HTTP_HOST'){
-			return "hbr2013.cebnet.com.cn";
+			return "zcgd2014.aoxpro.com";
 		}
 		if(is_null($key)) {
 			return $this->_server;

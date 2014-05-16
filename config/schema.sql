@@ -1,7 +1,7 @@
-DROP DATABASE `aoxpro_ebank`;
-CREATE DATABASE `aoxpro_ebank`;
+-- DROP DATABASE `aoxpro_zcgd`;
+CREATE DATABASE `aoxpro_zcgd`;
 
-USE `aoxpro_ebank`;
+USE `aoxpro_zcgd`;
 
 CREATE TABLE `user` (
   `id` bigint NOT NULL AUTO_INCREMENT COMMENT '用户自增ID',
