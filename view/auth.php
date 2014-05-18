@@ -1,36 +1,30 @@
-<!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>授权页</title>
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>马年抢金大作战</title>
+        <meta name="description" content="马年抢金大作战">
+        <link rel="stylesheet" href="/css/main.css">  
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
 
 <body>
 
-	<div class="top_nav">
-        <?php include WWW_ROOT . "/inc/logo_bar.dwt" ?>	
-	</div>
-
-	<div class="main1">
-    	<div class="center bg_2">
-	    <div title="HI，我是中国电子银行网吉祥物小V！我高大上么~" style="border: none; width: 143px; height: 150px; position: absolute; left: 942px; top: 69px; cursor:pointer;z-index:50;"></div>
-        <?php include WWW_ROOT . "/inc/navi.dwt" ?>	
-            <div class="clear"></div>
-	</div>
-    </div>
+    	<?php include WWW_ROOT . "/inc/logo_bar.dwt" ?>
+        
+        <div class="prize3">
+	<?php include WWW_ROOT . "/inc/navi.dwt" ?>
     
     <a name="login" />
-    <div class="content">
+    <div class="auth">
     	<a name="play"></a>
-    	<div class="sq">
-        	<h5>请选择微博帐号进行授权</h5>
-            <a href="/index.php?action=connect&platform=sina" title="新浪微博" class="a1"></a>
-            <a href="/index.php?action=connect&platform=tencent" title="腾讯微博" class="a2"></a>
-        </div>
+	<p><strong>请使用微博帐号进行授权</strong></p>
+	<p><a href="/index.php?action=connect&platform=sina" title="新浪微博" class="a1"></a></p>
     </div>
  
-	<div class="footer"></div>
+	<?php include WWW_ROOT . "/inc/footer.dwt" ?>
+
+	</div>
    
 </body>
 </html>

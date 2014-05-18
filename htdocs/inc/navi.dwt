@@ -1,1 +1,6 @@
-<div class="menu"><a href="/"><img src="img/18.png" alt="" /></a><a href="/index.php?action=game#play"><img src="img/19.png" alt="" /></a><a href="/intro.html"><img src="img/20.png" alt="" /></a><a href="/feeds.html"><img src="img/21.png" alt="" /></a><a href="http://www.cebnet.com.cn/ExPlan/special/2013hbr/"><img src="img/22.png" alt="" /></a></div>
+            <ul class="nav1">
+               <li><a href="/index.html"><img src="/img/nav11.png"></a></li>
+               <li><a href="/index.php?action=game#play"><img src="/img/nav12.png"></a></li>
+               <li><a href="/ten.html"><img src="/img/nav13.png"></a></li>
+               <li><a href="/pass.html"><img src="/img/nav14.png"></a></li>
+            </ul>   

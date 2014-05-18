@@ -1,37 +1,27 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>环保卫士大作战 - 电子银行环保活动日</title>
-<meta name="Keywords" content="中国电子银行,电子银行环保日,2013电子银行环保日,e滴水v环保,电子银行环保卫士大作战" />
-<meta name="Description" content="第二届电子银行环保日，推动全民积极使用电子银行交易，减少碳排放，为环保做贡献，线上活动包含有奖游戏及有奖转发微博，鼓励大众参与，了解电子银行环保日，推动公众对电子银行环保日的关注！" />
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script>
-function authLoad() {
-//	location = "/index.php?action=auth";
-
-}
-</script>
-</head>
+    <head>
+    	<html xmlns:wb="http://open.weibo.com/wb">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>马年抢金大作战</title>
+        <meta name="description" content="马年抢金大作战">
+        <link rel="stylesheet" href="/css/main.css">  
+        <link rel="shortcut icon" href="favicon.ico">
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+    </head>
 
 <body>
 
-	<div class="top_nav">
-        <?php include WWW_ROOT . "/inc/logo_bar.dwt" ?>	
-	</div>
-
-	<div class="main1">
-    	<div class="center bg_2">
-	    <div title="HI，我是中国电子银行网吉祥物小V！我高大上么~" style="border: none; width: 143px; height: 150px; position: absolute; left: 942px; top: 69px; cursor:pointer;z-index:50;"></div>
-        <?php include WWW_ROOT . "/inc/navi.dwt" ?>	
-            <div class="clear"></div>
-	</div>
-    </div>
+    	<?php include WWW_ROOT . "/inc/logo_bar.dwt" ?>
+        
+        <div class="prize2">          
+	<?php include WWW_ROOT . "/inc/navi.dwt" ?>
     
-    <div class="content">
+    <div class="game">
 <?php $_r = '201306191759'; ?>
 <a name="play"></a>
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="900" height="592" id="LLK" align="middle" style="position:relative;left:100px;z-index:10;">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="900" height="592" id="LLK" align="middle" style="position:relative;left:62px;z-index:10;">
 <param name="movie" value="/swf/game_do.swf?_=<?php echo $_r ?>" />
 <param name="quality" value="high" />
 <param name="bgcolor" value="#ffffff" />
@@ -66,7 +56,9 @@ function authLoad() {
 </object>
     </div>
  
-	<div class="footer"></div>
+	<?php include WWW_ROOT . "/inc/footer.dwt" ?>
+
+	</div>
    
 </body>
 </html>
