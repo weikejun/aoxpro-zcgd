@@ -139,6 +139,12 @@ b, strong {
     position:relative;    
 }
 
+.prize4 {
+    background: url(/img/pbg1.jpg) repeat-x;
+    height:1250px;
+    position:relative;    
+}
+
 .nav1 {
     position: absolute;
     left:200px;
