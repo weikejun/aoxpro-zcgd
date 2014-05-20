@@ -379,7 +379,7 @@ class My_Action_Game extends My_Action_Abstract {
 	}
 
 	protected function _postAction() {
-		$sParams = $this->getSession('oauth2');
+		$sParams = $this->getSession();
 		$actionBody = sprintf(
 				'ip=%s|sid=%s|msg=%s|uri=%s',
 				My_Service_Game::getIP(),
@@ -388,7 +388,7 @@ class My_Action_Game extends My_Action_Abstract {
 				$this->getServer('REQUEST_URI')
 				);
 		My_Model_ActionLog::logAction(
-				empty($sParams['user_id']) ? 0 : $sParams['user_id'],
+				empty($sParams['s_uid']) ? 0 : $sParams['s_uid'],
 				$this->getActionName(),
 				$actionBody,
 				$this->getActionTime()
