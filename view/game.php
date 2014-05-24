@@ -19,7 +19,7 @@
 	<?php include WWW_ROOT . "/inc/navi.dwt" ?>
     
     <div class="game">
-<?php $_r = '201306191759'; ?>
+<?php $_r = '201405211206'; ?>
 <a name="play"></a>
 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="900" height="592" id="LLK" align="middle" style="position:relative;left:62px;z-index:10;">
 <param name="movie" value="/swf/game_do.swf?_=<?php echo $_r ?>" />
